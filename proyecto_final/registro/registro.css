@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* El contenido empieza desde la parte superior */
+    align-items: center;
+    background: url(https://img.freepik.com/vector-premium/registro-restaurante-vector-servicio_58388-52.jpg?w=2000) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 0; /* Elimina cualquier margen inferior */
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+header {
+    background-color: #161111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static; /* Encabezado estático */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FF6347;
+}
+
+form {
+    padding: 30px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 700px;
+    background-color: rgba(50, 50, 50, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Aumenta el margen superior para evitar la superposición */
+    flex: 1;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    padding: 15px;
+}
+
+label {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+input {
+    padding: 17px 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border: 2px solid rgba(77, 59, 59, 0.5);
+    color: aliceblue;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:hover {
+    border-color: #FF6347;
+}
+
+input::placeholder {
+    color: rgb(243, 255, 255);
+}
+
+.btn {
+    font-size: 16px;
+    border: 0;
+    color: beige;
+    background: #e29191;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: blueviolet;
+}
+
+footer {
+    background-color: #161111;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 ;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}

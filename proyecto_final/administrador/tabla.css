@@ -1,0 +1,74 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://img.freepik.com/vector-premium/registro-restaurante-vector-servicio_58388-52.jpg?w=2000') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #333;
+    border-radius: 10px 10px 0 0;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+th {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}

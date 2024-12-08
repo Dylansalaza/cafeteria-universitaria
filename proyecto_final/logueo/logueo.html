@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logueo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>CAFETERIA UNIVERSITARIA</title>
+</head>
+<body>
+    <header>
+        <a href="/proyecto_final/index.php" style="text-decoration: none;">
+            <div class="logo">
+              <h2 style="color: #fff;">CAFETERIA <span style="color: #FF6347;">UNIV</span><span style="color: #4682B4;">ERSITARIA</span><span style="color: #fff;;">  "CUBO"</span></h2> 
+            </div>
+          </a>
+          
+        <nav>
+            <ul>
+                <li><a href="/proyecto_final/index.php">Inicio</a></li>
+                <li><a href="/proyecto_final/registro/registro.html">registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="logueo.php" class="formulario" method="post">
+        <h1>UNICIO DE SESION</h1>
+        <div class="input-box">
+            <input type="text" name="usuario" placeholder="usuario" required>
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="password" name="contrasena" placeholder="contraseña" required>
+            <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <button type="submit" class="btn">loguin</button><br>
+        <div class="abajo">
+            <label for="">si no tienes una cuenta primero  <a href="/proyecto_final/registro/registro.html">registrate</a></label>
+        </div>
+
+
+    </form>
+    
+    <div class="error">
+        <?php 
+            echo $_SESSION['error'];
+            unset($_SESSION['error']); // Limpiamos el mensaje de error
+        ?>
+    </div>
+
+    
+</body>
+<footer>
+    <p>&copy; 2024 Cafeteria Universitaria 'CUBO'. Todos los derechos reservados.</p>
+    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    <p>Síguenos en: 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">Instagram</a>
+    </p>
+</footer>
+</html>

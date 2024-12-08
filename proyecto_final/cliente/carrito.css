@@ -1,0 +1,120 @@
+/* Estilos generales */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://img.freepik.com/vector-premium/registro-restaurante-vector-servicio_58388-52.jpg?w=2000) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #333;
+}
+
+thead th {
+    padding: 10px;
+    font-weight: bold;
+}
+
+tbody tr {
+    border-bottom: 1px solid #555;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+}
+
+tfoot td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Estilos para los formularios y botones */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* Estilos para el botón del carrito */
+.cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+
+.view-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.view-cart:hover {
+    background-color: #ff4500;
+}

@@ -1,0 +1,199 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://img.freepik.com/vector-premium/registro-restaurante-vector-servicio_58388-52.jpg?w=2000') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Compensar la altura del header */
+}
+
+.container {
+    background-color: rgba(45, 45, 45, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    width: 70%;  /* Reducir el tamaño del contenedor */
+    max-width: 1200px;  /* Limitar el tamaño máximo */
+    margin-top: 60px;
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.category-section {
+    margin-bottom: 20px;
+}
+
+.category-section h2 {
+    color: white;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+
+.product-card {
+    background-color: #333;
+    border-radius: 10px;
+    width: 250px;  /* Reducir el tamaño de las tarjetas de producto */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;  /* Reducir la altura de las imágenes */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.product-card p {
+    color: #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-card .price {
+    color: #eaeaea;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    display: inline-block;
+    background-color: #e0e8e9;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(145, 32, 32);
+    color: white;
+}
+
+.no-products {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cart-button {
+    position: fixed;
+    bottom: 20px; /* Cambiado para mover el botón a la parte inferior */
+    right: 20px;
+    z-index: 1000;
+}
+
+.view-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.view-cart:hover {
+    background-color: #ff4500;
+}
+
+header {
+    background-color: #161111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;  /* Header fijo */
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+footer {
+    background-color: #161111;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 ;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}
